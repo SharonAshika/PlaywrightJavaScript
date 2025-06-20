@@ -1,0 +1,25 @@
+
+install 
+ npm init playwright@latest
+
+ run test 
+ npx playwright test   
+
+ //npm is node package manager
+ //npx is node package runner (inbuilt runner)
+
+ in UI mode -for debugging purpose
+ npx playwright test --ui
+
+ run in headed mode
+ npx playwright test --headed
+
+ specify multiple browsers to run your tests
+ npx playwright test --project webkit --project firefox
+ or 
+ config in playwright.config.js
+
+ run last failed 
+ npx playwright test --last-failed
+
+ 
