@@ -1,4 +1,7 @@
 
+execute only js (javascript-programs folder)
+ node .\javascript-programs\filename.js
+
 install 
  npm init playwright@latest
 
