@@ -33,7 +33,7 @@ test.describe.serial("different scenarios automation", ()=>{
         await page.waitForLoadState('load');
        // await page.screenshot({fullPage:true, path: './screenshot/sampletest.png'});
         await page.waitForSelector('#uploadFile', {state:'visible'});
-       await page.setInputFiles('#uploadFile', 'C:\\Users\\sharo\\OneDrive\\Documents\\GitHub\\PlaywrightJavaScript\\screenshot\\sampletest.png', {timeout: 10000});
+       //await page.setInputFiles('#uploadFile', 'C:\\Users\\sharo\\OneDrive\\Documents\\GitHub\\PlaywrightJavaScript\\screenshot\\sampletest.png', {timeout: 10000});
        await page.waitForTimeout(5000);
        var test = await page.setInputFiles('#uploadFile');
        await test.setInputFiles(null);
