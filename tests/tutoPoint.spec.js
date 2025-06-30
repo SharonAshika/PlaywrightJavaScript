@@ -28,20 +28,17 @@ test.describe.serial("different scenarios automation", ()=>{
 
         });
 
-    await test.step("upload/download", async()=>{
-        await page.goto("https://www.tutorialspoint.com/selenium/practice/upload-download.php");
-        await page.waitForLoadState('load');
-       // await page.screenshot({fullPage:true, path: './screenshot/sampletest.png'});
-        await page.waitForSelector('#uploadFile', {state:'visible'});
-       //await page.setInputFiles('#uploadFile', 'C:\\Users\\sharo\\OneDrive\\Documents\\GitHub\\PlaywrightJavaScript\\screenshot\\sampletest.png', {timeout: 10000});
-       await page.waitForTimeout(5000);
-       var test = await page.setInputFiles('#uploadFile');
-       await test.setInputFiles(null);
-        //locator type: we can use empty array to remove files ([]);
-     await page.waitForTimeout(5000);
-
-
-    })
-
+    // await test.step("upload/download", async()=>{
+    //     await page.goto("https://www.tutorialspoint.com/selenium/practice/upload-download.php");
+    //     await page.waitForLoadState('load');
+    //    // await page.screenshot({fullPage:true, path: './screenshot/sampletest.png'});
+    //     await page.waitForSelector('#uploadFile', {state:'visible'});
+    //    //await page.setInputFiles('#uploadFile', 'C:\\Users\\sharo\\OneDrive\\Documents\\GitHub\\PlaywrightJavaScript\\screenshot\\sampletest.png', {timeout: 10000});
+    //    await page.waitForTimeout(5000);
+    //   // var test = await page.setInputFiles('#uploadFile');
+    //    //await test.setInputFiles(null);
+    //     //locator type: we can use empty array to remove files ([]);
+    //  await page.waitForTimeout(5000);
+    // })
     })
 })
