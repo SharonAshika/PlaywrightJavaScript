@@ -2,6 +2,11 @@
 execute only js (javascript-programs folder)
  node .\javascript-programs\filename.js
 
+execute automation files 
+npx playwright test tests/tutoPoint.spec.js
+npx playwright test --headed
+npx playwright test -ui
+
 install 
  npm init playwright@latest
 
@@ -25,4 +30,5 @@ install
  run last failed 
  npx playwright test --last-failed
 
- 
+ CSV file read
+ npm install csv-parse
