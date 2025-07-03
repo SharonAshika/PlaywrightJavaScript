@@ -15,7 +15,7 @@ test.describe('forms', ()=>{
             await page.locator('#mobile').fill('7837456378');
             await page.locator('#dob').fill('2025-07-03');
             await page.locator('#subjects').fill('English');
-            await page.setInputFiles('input[type="file"]', 'C:\\Users\\sharo\\OneDrive\\Documents\\GitHub\\PlaywrightJavaScript\\tests\\usersData.csv');
+            //await page.setInputFiles('input[type="file"]', 'C:\\Users\\sharo\\OneDrive\\Documents\\GitHub\\PlaywrightJavaScript\\tests\\usersData.csv');
             await page.locator('textarea[placeholder="Currend Address"]').fill('123 Main Street,.\nApartment 4B, New York,.\nNY 10001');
             await page.keyboard.press('Tab');
             await page.locator('#state').click();
